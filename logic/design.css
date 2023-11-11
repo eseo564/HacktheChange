@@ -2,6 +2,9 @@ h2 {
 	background-color: #F5F5DC;
 	text-align: center;
 }
+p {
+	max-width: 400px;
+}
 a:link {
 	color: #F30000;
 	font-size: 18px;
