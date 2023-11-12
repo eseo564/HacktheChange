@@ -3,7 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Traffic Flow-and-Go</title>
+        <link rel="stylesheet" href="test.css">
+        <link rel="stylesheet" href="header.css">
         <link href="design.css" tpe="text/css" rel="stylesheet">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const employeeId = urlParams.get('id');
+            console.log(greetingValue);  
+        </script>
     </head>
     <body>
         <h1>
@@ -38,7 +45,7 @@
             <td>Monday, Wednesday, Friday</td>
             <td>Tuesday, Thursday</td>
             <td>
-                <a href=""><Button type="button">Edit Employee</Button></a>
+                <a href="edit_employees.html?id=1"><Button type="button">Edit Employee</Button></a>
             </td>
         </tr>
         <tr>
@@ -50,7 +57,7 @@
             <td>Monday, Tuesday, Thursday</td>
             <td>Wednesday, Friday</td>
             <td>
-                <a href=""><Button type="button">Edit Employee</Button></a>
+                <a href="edit_employees.html?id=2"><Button type="button">Edit Employee</Button></a>
             </td>
         </tr>
         <tr>
@@ -62,7 +69,7 @@
             <td>Monday, Tuesday, Wednesday</td>
             <td>Thursday, Friday</td>
             <td>
-                <a href=""><Button type="button">Edit Employee</Button></a>
+                <a href="edit.employees.html?id=3"><Button type="button">Edit Employee</Button></a>
             </td>
         </tr>
       </table>
