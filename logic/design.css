@@ -1,16 +1,20 @@
 body {
 	text-align: center;
 }
+img {
+	width: 10%;
+	height: 10%;
+}
 h2 {
 	background-color: #F5F5DC;
 }
 p {
-	max-width: 400px;
+	max-width: 30%;
 	margin: 0 auto;
 }
 a:link {
 	color: #F30000;
-	font-size: 18px;
+	font-size: 80%;
 	text-decoration: none;
 	font-weight: bold;
 }
