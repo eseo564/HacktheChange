@@ -3,43 +3,56 @@
     <head>
         <meta charset="utf-8">
         <title>Traffic Flow-and-Go</title>
-	<link href="design.css" tpe="text/css" rel="stylesheet">
+	<link href="design.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-	<h1>
-		<img src="../images/Untitled3_20231111194425.png"/>
-	</h1>
+	<h1><img src="../images/Untitled3_20231111194425.png" /></h1>
 	<h2>
   		<a href="main_page.html">Home |</a>
   		<a href="total_employees.html">Employee List |</a>
-		<a href="flowTst.html">Create Workdays |</a>
-		<a href="edit_employees.html">Add/Remove Employees |</a>
+  		<a href="edit_employees.html">Add/Remove Employees |</a>
   		<a href="visualize_schedule.html">Schedule</a>
 	</h2>
-
-	<h3>Our purpose</h3>
-
-	<p>Traffic Flow-and-Go is a schedule builder designed to use 
-	the recent development of hybrid work to reduce urban traffic
-	congestion during the standard workweek.</p>
-
-	<h3>The Problem</h3>
-
-	<p>Since the quality of municipal transit systems varies from 
-	city to city and the quality of these systems is often low,
-	many workers are forced to drive if they want a somewhat
-	reasonable commute time. This results in a greater amount of
-	cars on the road at a given time and a greater chance of congestion.
-	Traffic congestion is a problem that both reduces worker well-being
-	and increases the amount of carbon a vehicle emits during a drive.</p>
 	
-	<h3>How This Works</h3>
+	<div id="firstLine1" class="content">
+		<h3>Our purpose</h3>
 
-	<p>Using a list of employees in a city, including their home location,
-	work location, and their mandatory in-person workdays, this website finds
-	an optimal balance of in-person and remote workdays for each worker. This
-	balance is then entered into a schedule, that, if followed, will reduce
-	overall traffic congestion. Employees can be added or removed from the list.
-	Also, employee information in the list can be edited.</p>
+		<p>Traffic Flow-and-Go is a schedule builder designed to use 
+		the recent development of hybrid work to reduce urban traffic	
+		congestion during the standard workweek</p>
+	</div>
+	<div id="firstLine2" class="content">
+		<h3><img src="../images/Untitled6_20231111210740.png" /></h3>
+	</div>
+	<div id="firstLine3" class="content">
+		<h3>How This Works</h3>
+
+		<p>Using a list of employees in a city, including their home location,
+		work location, and their mandatory in-person workdays, this website finds
+		an optimal balance of in-person and remote workdays for each worker. This
+		balance is then entered into a schedule, that, if followed, will reduce
+		overall traffic congestion. Employees can be added or removed from the list.
+		Also, employee information in the list can be edited.</p>
+	</div>
+	<div id="nextLine1" class="content">
+		<h3><img src="../images/Untitled2_20231111211900.png" /></h3>
+	</div>
+	<div id="nextLine2" class="content">
+		<h3>The Problem</h3>
+
+		<p>Since the quality of municipal transit systems varies from 
+		city to city and the quality of these systems is often low,
+		many workers are forced to drive if they want a somewhat
+		reasonable commute time. This results in a greater amount of
+		cars on the road at a given time and a greater chance of congestion.
+		Traffic congestion is a problem that both reduces worker well-being
+		and increases the amount of carbon a vehicle emits during a drive.</p>
+	</div>
+	<div id="nextLine3" class="content">
+		<h3><img src="../images/Untitled4_20231111200646.png" /></h3>
+	</div>
+	<div id="nextLine4" class="content">
+		<h3><img src="../images/Untitled5_20231111203509.png" /></h3>
+	</div>
     </body>
 </html>
