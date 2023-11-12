@@ -57,7 +57,7 @@ public void assignRemotedays(int[] remoteDays, int[] Wrkdays, int mandatoryWorkD
     int day = 1;
   for (i = 0, i < 5, i++)
   {
-    if( day == workDays[i])
+    if( day != workDays[i])
     {
         remoteDays[i] = day;
     }
