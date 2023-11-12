@@ -30,6 +30,7 @@ p {
 	font-size: 100%;
 	max-width: 60%;
 	margin: 0 auto;
+	border: 20px solid #EFEFEF;
 }
 a:link {
 	color: #45069E;
