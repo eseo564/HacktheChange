@@ -1,25 +1,41 @@
 body {
 	text-align: center;
 }
-img {
-	width: 10%;
-	height: 10%;
+h1 {
+	img {
+		max-height: 10%;
+		max-width: 10%;
+	}
 }
 h2 {
 	background-color: #F5F5DC;
 }
+#firstLine1, #firstLine2, #firstLine3 {
+	img {
+		width: 30%;
+	}
+	padding: 15px 0px 5px 5px;
+	max-width: 33%;
+	float: left;
+}
+#nextLine1, #nextLine2, #nextLine3, #nextLine4 {
+	img {
+		width: 50%;
+		height: 50%;
+	}
+	max-width: 25%;
+	float: left;
+}
 p {
-	max-width: 30%;
+	font-size: 100%;
+	max-width: 60%;
 	margin: 0 auto;
 }
 a:link {
-	color: #F30000;
+	color: #45069E;
 	font-size: 80%;
 	text-decoration: none;
 	font-weight: bold;
-}
-a:visited {
-	color: #45069E;
 }
 a:hover {
 	color: #001AA3;
