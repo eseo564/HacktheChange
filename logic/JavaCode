@@ -33,35 +33,50 @@ public void createEmployee(String name, String email, String address, int[] work
     newEmployee.name = name;
     newEmployee.email = email;
     newEmployee.address = address;
-    newEmployee.workDays = assignWorkdays(int[] Wrkdays,int mandatoryWorkDays,int startDay);
-    newEmployee.remoteDays = assignRemotedays(int[] remoteDays, int[] Wrkdays, int mandatoryWorkDays, int startDay);
+    newEmployee.workDays = assignWorkdays(newEmployee.mandatoryWorkDays, newEmployee.startDay);
+    newEmployee.remoteDays = assignRemotedays(newEmployee.workDays, newEmployee.mandatoryWorkDays, newEmployee.startDay);
     newEmployee.district = district;
 
     // Add the new employee to the array of subordinates
     addEmployee(newEmployee);
 }
 
-public void assignWorkdays(int[] Wrkdays,int mandatoryWorkDays,int startDay)
+public void addEmployee(Employee newEmployee)
 {
-    int[] Wrkdays = new int[mandatoryWorkDays];
-    for(int i= 0, i < = mandatoryWorkDays)
-    {
-        Wrkdays[i] = (startDay % 5) + 1;
-    }
-    
+ 
+ Employee[] newSubordinates = new Employee[subordinates.length + 1];
+
+ // Copy existing employees to the new array
+ System.arraycopy(subordinates, 0, newSubordinates, 0, subordinates.length);
+ 
+ newSubordinates[subordinates.length] = newEmployee;
+ subordinates = newSubordinates;
 }
 
-public void assignRemotedays(int[] remoteDays, int[] Wrkdays, int mandatoryWorkDays, int startDay)
+public int[] assignWorkdays(int mandatoryWorkDays,int startDay)
 {
-    int[] remoteDays = new int[5 - (mandatoryWorkDays % 5)];
+    int[] Wrkdays = new int[mandatoryWorkDays];
+    int week_start = startDay;
+    for(int i= 0; i < mandatoryWorkDays; i++)
+    {
+        Wrkdays[i] = (week_start % 5);
+        week_start ++;
+    }
+    return Wrkdays;
+}
+
+public int[] assignRemotedays(int[] Wrkdays, int mandatoryWorkDays, int startDay)
+{
+    int freeDays = 5 - mandatoryWorkDays;
+    int[] remoteDays = new int[freeDays];
     int day = 1;
-  for (i = 0, i < 5, i++)
+  for (int i = 0; i < 5; i++)
   {
-    if( day != workDays[i])
+    if( day != Wrkdays[i])
     {
         remoteDays[i] = day;
     }
   day++;
  }
-    
+   return remoteDays; 
 }
