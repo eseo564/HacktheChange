@@ -1,0 +1,67 @@
+public class Employee
+{
+    String name;
+    String email;
+    String address;
+    String company;
+    int[] workDays;
+    int[] remoteDays;
+    int district;
+    int mandatoryWorkDays = 3; //days the employee must work, default 3
+    int startDay; //1-5
+
+}
+
+public class Company
+{
+    String name;
+    String location;
+    Employee[] subordinates; 
+}
+
+public Company(String name, String location)
+ {
+    this.name = name;
+    this.location = location;
+    this.subordinates = new Employee[0]; // Initialize the array of subordinates
+}
+
+public void createEmployee(String name, String email, String address, int[] workDays, int[] remoteDays, int district)
+ {
+    
+    Employee newEmployee = new Employee();
+    newEmployee.name = name;
+    newEmployee.email = email;
+    newEmployee.address = address;
+    newEmployee.workDays = assignWorkdays(int[] Wrkdays,int mandatoryWorkDays,int startDay);
+    newEmployee.remoteDays = assignRemotedays(int[] remoteDays, int[] Wrkdays, int mandatoryWorkDays, int startDay);
+    newEmployee.district = district;
+
+    // Add the new employee to the array of subordinates
+    addEmployee(newEmployee);
+}
+
+public void assignWorkdays(int[] Wrkdays,int mandatoryWorkDays,int startDay)
+{
+    int[] Wrkdays = new int[mandatoryWorkDays];
+    for(int i= 0, i < = mandatoryWorkDays)
+    {
+        Wrkdays[i] = (startDay % 5) + 1;
+    }
+    
+}
+
+public void assignRemotedays(int[] remoteDays, int[] Wrkdays, int mandatoryWorkDays, int startDay)
+{
+    int[] remoteDays = new int[5 - (mandatoryWorkDays % 5)];
+    int day = 1;
+  for (i = 0, i < 5, i++)
+  {
+    if( day == workDays[i])
+    {
+        remoteDays[i] = day;
+    }
+  day++;
+ }
+    
+}
