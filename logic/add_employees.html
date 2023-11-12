@@ -3,43 +3,55 @@
     <head>
         <meta charset="utf-8">
         <title>Traffic Flow-and-Go</title>
-        <link href="design.css" tpe="text/css" rel="stylesheet">
+        <link href="test.css"rel="stylesheet">
+        <link href="header.css" rel="stylesheet">
+        <script src="test.js"></script>
     </head>
     <body>
-        <h1>
-		    <img src="<img src="../images/Untitled3_20231111194425.png"/>
-	    </h1>
-        <h2>
-  	        <a href="main_page.html">Home |</a>
-  		<a href="total_employees.html">Employee List |</a>
-		<a href="flowTst.html">Create Workdays |</a>
-		<a href="edit_employees.html">Add/Remove Employees |</a>
-  		<a href="visualize_schedule.html">Schedule</a>
-        </h2>
+        <div class="header">
+        
+            <a href="index.html"><img src="../images/logo_small.png" alt=""></a>
+        
+            <a href="index.html"><img src="../images/car_button_home.png" alt=""></a>
+            <a href="total_employees.html"><img src="../images/car_button_employees.png" alt=""></a>
+            <a href="edit_employees.html"><img src="../images/car_button_my_company.png" alt=""></a>
+            <a href="visualize_schedule.html"><img src="../images/car_button_schedules.png" alt=""></a>
 
-<h3>Add Employee</h3>
+        </div>
+    
 
-    <div class="center-aligned">
-        <form>
-            <div><label>Name:</label><input type="text"></div>
-            <div><label>Email:</label><input type="text"></div>
-            <div><label>Address:</label><input type="text"></div>
-            <div>District:
-                <label><input class="districtGroup" type="checkbox" value="1">1</label>
-                <label><input class="districtGroup" type="checkbox" value="2">2</label>
-                <label><input class="districtGroup" type="checkbox" value="3">3</label>
-                <label><input class="districtGroup" type="checkbox" value="4">4</label>
-            </div>
-            <div>Mandatory Workdays:
-                <label><input id="1" class="dayGroup" type="checkbox" value="Monday">Monday</label>
-                <label><input id="1" class="dayGroup" type="checkbox" value="Tuesday" checked>Tuesday</label>
-                <label><input id="1" class="dayGroup" type="checkbox" value="Wednesday">Wednesday</label>
-                <label><input id="1" class="dayGroup" type="checkbox" value="Thursday">Thursday</label>
-                <label><input id="1" class="dayGroup" type="checkbox" value="Friday">Friday</label>
-            </div>
 
+        <div class="center-block">
+            
+        <h3>Add Employee</h3>
+            <form>
+                <div class="label">Name:</div><div class="field"><input type="text"></div>
+                <div class="label">Email:</div><div class="field"><input type="text"></div>
+                <div class="label">Address:</div><div class="field"><input type="text"></div>
+                <div class="label">District:</div><div class="field"><input type="text"></div>
+                <div class="label">District:</div>
+                <div class="field">
+                    <label><input class="districtGroup" type="checkbox" value="1">1</label>
+                    <label><input class="districtGroup" type="checkbox" value="2">2</label>
+                    <label><input class="districtGroup" type="checkbox" value="3">3</label>
+                    <label><input class="districtGroup" type="checkbox" value="4">4</label>
+                </div>
+                <div class="label">Mandatory Workdays:</div>
+                <div class="field">
+                    <label><input id="1" class="dayGroup" type="checkbox" value="Monday">Monday</label>
+                    <label><input id="1" class="dayGroup" type="checkbox" value="Tuesday" checked>Tuesday</label>
+                    <label><input id="1" class="dayGroup" type="checkbox" value="Wednesday">Wednesday</label>
+                    <label><input id="1" class="dayGroup" type="checkbox" value="Thursday">Thursday</label>
+                    <label><input id="1" class="dayGroup" type="checkbox" value="Friday">Friday</label>
+                </div>
+
+            </form>
+            <br>
+            <br>
             <button type="submit">Submit</button>
-        </form>
-    </div>
+        </div>
+
+
+
     </body>
 </html>
